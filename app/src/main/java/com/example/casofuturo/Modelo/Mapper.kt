@@ -31,7 +31,8 @@ fun fromInternetCourseDetailEntity( course: CourseDetail) :CoursesDetailEntity{
         image = course.image,
         weeks = course.weeks,
         tuition = course.tuition,
-        miniumSkill = course.miniumSkill,
+      // miniumSkill = course.miniumSkill?: "",
+       miniumSkill = course.minimumSkill,
         scholarshipAvailable = true,
         modality = course.modality,
         start = course.start

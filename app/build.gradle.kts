@@ -83,4 +83,51 @@ dependencies {
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
+
+
+
+    // Optional -- Mockito framework
+    testImplementation ("org.mockito:mockito-core:1.10.19")
+
+    // dependencias de mockWebserver
+    // Dependencia de OkHttp
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+
+    // Dependencia de OkHttp MockWebServer (para pruebas)
+    testImplementation ("com.squareup.okhttp3:mockwebserver:4.9.3")
+    //configurations.all {
+     //   exclude module: 'okhttp-ws'
+
+
+
+// For Robolectric tests.
+    testImplementation("com.google.dagger:hilt-android-testing:2.44")
+    // ...with Kotlin.
+    kaptTest("com.google.dagger:hilt-android-compiler:2.44")
+    // ...with Java.
+    testAnnotationProcessor("com.google.dagger:hilt-android-compiler:2.44")
+
+    // For instrumented tests.
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.44")
+    // ...with Kotlin.
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.44")
+    // ...with Java.
+    androidTestAnnotationProcessor("com.google.dagger:hilt-android-compiler:2.44")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
